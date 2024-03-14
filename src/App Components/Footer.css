@@ -1,0 +1,86 @@
+.footer {
+    display: grid;
+    grid-template-areas: "reachMe  about"
+                         "connect connect";
+    grid-template-columns: 1fr 1fr;    
+    background: rgba(41, 32, 32, 0.9); 
+}
+
+.left {
+    grid-area: reachMe;
+    width: 100%;
+    margin: 1.5rem 1.5rem;
+}
+
+.location {
+    display: flex;
+}
+
+
+.right {
+    grid-area: about;
+    width: 100%;
+    position: relative;
+    margin: 2rem 2rem;
+}
+
+.right h3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1.2rem 0;
+}
+
+
+.center {
+    grid-area: connect;
+    width: 100%;
+    margin: 1.2rem 1.5rem;
+}
+.center h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.7rem 1.5rem;
+}
+.center .reachMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.2rem 2rem;
+}
+.left, .right, .center {
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+}
+.location, .phone, .email {
+    margin: 1.5rem 2rem; 
+}
+
+
+@media  screen and (max-width: 640px) {
+    .footer {
+        grid-template-areas: "reachMe"
+                             "about"
+                             "connect";
+                     
+    }
+    .left {
+        margin: 1.5rem 2.5rem;
+   
+    }
+    .right {
+        margin: 1rem 3rem;
+        padding: 0 5px
+    }
+    .right h3 {
+        justify-content: center;
+    }
+    .center {
+        margin: 1.2rem 2.5rem
+    }
+
+}
+
+
