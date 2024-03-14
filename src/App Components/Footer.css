@@ -64,21 +64,28 @@
         grid-template-areas: "reachMe"
                              "about"
                              "connect";
-                     
+
+                  
     }
     .left {
-        margin: 1.5rem 2.5rem;
+        margin: 1.5rem 2rem;
+        width: auto;
    
     }
     .right {
         margin: 1rem 3rem;
-        padding: 0 5px
+        padding: 0 5px;
+        width: auto;
+        
     }
     .right h3 {
         justify-content: center;
+        width: auto;
     }
     .center {
-        margin: 1.2rem 2.5rem
+        margin: 1.2rem 1rem;
+        width: auto;
+        text-align: center;
     }
 
 }
